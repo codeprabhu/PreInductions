@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: d019572cd1766054bbe1b159f1447b7c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 668725517938838958
+    second: bonus wooden stairs (alt)_0
+  - first:
+      213: 7224572897762099523
+    second: bonus wooden stairs (alt)_1
+  - first:
+      213: -5952269712786513693
+    second: bonus wooden stairs (alt)_2
+  - first:
+      213: 9017924085868771649
+    second: bonus wooden stairs (alt)_3
+  - first:
+      213: -1872316539474890378
+    second: bonus wooden stairs (alt)_4
+  - first:
+      213: 5593930955355744131
+    second: bonus wooden stairs (alt)_5
+  - first:
+      213: -145554509544021258
+    second: bonus wooden stairs (alt)_6
+  - first:
+      213: -4107630671755549331
+    second: bonus wooden stairs (alt)_7
+  - first:
+      213: 4013060178611445162
+    second: bonus wooden stairs (alt)_8
+  - first:
+      213: 4480153974241252508
+    second: bonus wooden stairs (alt)_9
+  - first:
+      213: -2112213591724606424
+    second: bonus wooden stairs (alt)_10
+  - first:
+      213: -5018499240953084057
+    second: bonus wooden stairs (alt)_11
+  - first:
+      213: 5824631447019153166
+    second: bonus wooden stairs (alt)_12
+  - first:
+      213: -3701754642359166859
+    second: bonus wooden stairs (alt)_13
+  - first:
+      213: 8912531153792674951
+    second: bonus wooden stairs (alt)_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadcbf4c05ac74900800000000000000
+      internalID: 668725517938838958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 202
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3414609e5c6d24460800000000000000
+      internalID: 7224572897762099523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 111
+        width: 66
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e02b029b3a456da0800000000000000
+      internalID: -5952269712786513693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 175
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149b5a55d2a162d70800000000000000
+      internalID: 9017924085868771649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 170
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671b28df6023406e0800000000000000
+      internalID: -1872316539474890378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 111
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3876a04e092a1ad40800000000000000
+      internalID: 5593930955355744131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 106
+        width: 50
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f22c2bd1f2eafdf0800000000000000
+      internalID: -145554509544021258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 15
+        width: 46
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65e28dcaa3cef6c0800000000000000
+      internalID: -4107630671755549331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 42
+        width: 8
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad966868f041b730800000000000000
+      internalID: 4013060178611445162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 63
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9454bd7d44bc2e30800000000000000
+      internalID: 4480153974241252508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 42
+        width: 6
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cb087ede8efa2e0800000000000000
+      internalID: -2112213591724606424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 15
+        width: 66
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7678c6d8785ba5ab0800000000000000
+      internalID: -5018499240953084057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 15
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07652bd07f35d050800000000000000
+      internalID: 5824631447019153166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_13
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 10
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5785788f3c9b0acc0800000000000000
+      internalID: -3701754642359166859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bonus wooden stairs (alt)_14
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 10
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c2a6f1ddbafab70800000000000000
+      internalID: 8912531153792674951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bonus wooden stairs (alt)_0: 668725517938838958
+      bonus wooden stairs (alt)_1: 7224572897762099523
+      bonus wooden stairs (alt)_10: -2112213591724606424
+      bonus wooden stairs (alt)_11: -5018499240953084057
+      bonus wooden stairs (alt)_12: 5824631447019153166
+      bonus wooden stairs (alt)_13: -3701754642359166859
+      bonus wooden stairs (alt)_14: 8912531153792674951
+      bonus wooden stairs (alt)_2: -5952269712786513693
+      bonus wooden stairs (alt)_3: 9017924085868771649
+      bonus wooden stairs (alt)_4: -1872316539474890378
+      bonus wooden stairs (alt)_5: 5593930955355744131
+      bonus wooden stairs (alt)_6: -145554509544021258
+      bonus wooden stairs (alt)_7: -4107630671755549331
+      bonus wooden stairs (alt)_8: 4013060178611445162
+      bonus wooden stairs (alt)_9: 4480153974241252508
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
