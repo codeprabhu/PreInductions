@@ -46,6 +46,8 @@ public class GuardAI : MonoBehaviour
             Patrol();
             DetectPlayer();
         }
+        if (GetComponent<Damageable>().isStunned) return;
+
     }
 
     private void Patrol()

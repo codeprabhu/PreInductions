@@ -46,6 +46,8 @@ public class TopDownRunnerMovement : MonoBehaviour
         ReadInput();
         MovePlayer();
         UpdateAnimation();
+        if (GetComponent<Damageable>().isStunned) return;
+
     }
 
     private void ReadInput()

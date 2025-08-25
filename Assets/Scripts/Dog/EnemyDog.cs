@@ -27,6 +27,8 @@ public class EnemyDog : MonoBehaviour
     void Update()
     {
         if (player == null) return;
+        if (GetComponent<Damageable>().isStunned) return;
+
 
         float distance = Vector2.Distance(transform.position, player.position);
 
