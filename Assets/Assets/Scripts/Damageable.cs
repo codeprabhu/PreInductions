@@ -50,14 +50,14 @@ public class Damageable : MonoBehaviour
         }
     }
 
-    IEnumerator StunRoutine(float duration)
+    public IEnumerator StunRoutine(float duration)
     {
         isStunned = true;
         yield return new WaitForSeconds(duration);
         isStunned = false;
     }
 
-    void ApplyKnockback(Vector2 sourcePosition)
+    public void ApplyKnockback(Vector2 sourcePosition)
     {
         if (rb != null)
         {

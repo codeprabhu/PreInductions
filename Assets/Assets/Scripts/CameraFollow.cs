@@ -15,9 +15,11 @@ public class CameraFollow2D : MonoBehaviour
     [Tooltip("Lowest Y position the camera can go.")]
     public float minY = -5f;
 
+    [Tooltip("Optional max Y just for gizmo visualization (not clamped in code).")]
+    public float gizmoMaxY = 20f;
+
     [Header("Gizmo Settings")]
     public Color gizmoColor = Color.cyan;
-    public float gizmoHeight = 50f; // how tall to draw the vertical lines
 
     private void LateUpdate()
     {
@@ -43,14 +45,18 @@ public class CameraFollow2D : MonoBehaviour
         float leftX = xLimits.x;
         float rightX = xLimits.y;
         float bottomY = minY;
+        float topY = gizmoMaxY;
 
         // Left vertical line
-        Gizmos.DrawLine(new Vector3(leftX, bottomY, 0), new Vector3(leftX, bottomY + gizmoHeight, 0));
+        Gizmos.DrawLine(new Vector3(leftX, bottomY, 0), new Vector3(leftX, topY, 0));
 
         // Right vertical line
-        Gizmos.DrawLine(new Vector3(rightX, bottomY, 0), new Vector3(rightX, bottomY + gizmoHeight, 0));
+        Gizmos.DrawLine(new Vector3(rightX, bottomY, 0), new Vector3(rightX, topY, 0));
 
         // Bottom horizontal line
         Gizmos.DrawLine(new Vector3(leftX, bottomY, 0), new Vector3(rightX, bottomY, 0));
+
+        // Top horizontal line (visual only)
+        Gizmos.DrawLine(new Vector3(leftX, topY, 0), new Vector3(rightX, topY, 0));
     }
 }
