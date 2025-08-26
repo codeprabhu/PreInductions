@@ -1,11 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/// <summary>
-/// Four-direction top-down movement using Animator.Play() directly.
-/// Plays walk animation when moving, then idle animation in last facing direction when stopped.
-/// Directions: 0=Down,1=Left,2=Right,3=Up
-/// </summary>
 [RequireComponent(typeof(Animator))]
 public class TopDownRunnerMovement : MonoBehaviour
 {
@@ -16,8 +11,12 @@ public class TopDownRunnerMovement : MonoBehaviour
     [Tooltip("Movement speed in units/sec for WASD/Arrows.")]
     public float moveSpeed = 10f;
 
-    [Tooltip("Half-size of the allowed movement box for the player (centered at (0,0)).")]
-    public Vector2 playAreaExtents = new Vector2(4.5f, 7f);
+    [Tooltip("Horizontal play area extents (x) and bottom Y limit (y).")]
+    public Vector2 playAreaLimits = new Vector2(4.5f, -7f);
+
+    [Header("Gizmo Settings")]
+    [Tooltip("Color of the play area lines drawn in Scene view.")]
+    public Color gizmoColor = Color.green;
 
     private Animator animator;
     private Vector2 moveInput;
@@ -37,7 +36,6 @@ public class TopDownRunnerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         if (!player) player = transform;
-        // Start facing down idle
         animator.Play(idleStates[lastDirection]);
     }
 
@@ -65,10 +63,12 @@ public class TopDownRunnerMovement : MonoBehaviour
         Vector3 delta = new Vector3(moveInput.x, moveInput.y, 0f) * moveSpeed * Time.deltaTime;
         player.position += delta;
 
-        // Clamp inside play area (centered at origin)
         var p = player.position;
-        p.x = Mathf.Clamp(p.x, -playAreaExtents.x, playAreaExtents.x);
-        p.y = Mathf.Clamp(p.y, -playAreaExtents.y, playAreaExtents.y);
+        // Clamp X between -limit and +limit
+        p.x = Mathf.Clamp(p.x, -playAreaLimits.x, playAreaLimits.x);
+        // Clamp Y only with a bottom boundary
+        if (p.y < playAreaLimits.y) p.y = playAreaLimits.y;
+
         player.position = p;
     }
 
@@ -76,7 +76,6 @@ public class TopDownRunnerMovement : MonoBehaviour
     {
         if (moveInput.sqrMagnitude > 0.0001f)
         {
-            // Pick axis with larger magnitude for facing direction
             if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
                 lastDirection = moveInput.x > 0f ? DIR_RIGHT : DIR_LEFT;
             else
@@ -90,10 +89,19 @@ public class TopDownRunnerMovement : MonoBehaviour
         }
     }
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
-        Gizmos.color = Color.white;
-        Vector3 size = new Vector3(playAreaExtents.x * 2f, playAreaExtents.y * 2f, 0f);
-        Gizmos.DrawWireCube(Vector3.zero, size);
+        Gizmos.color = gizmoColor;
+
+        float leftX = -playAreaLimits.x;
+        float rightX = playAreaLimits.x;
+        float bottomY = playAreaLimits.y;
+
+        // Vertical lines for left & right X limits
+        Gizmos.DrawLine(new Vector3(leftX, bottomY, 0), new Vector3(leftX, bottomY + 999f, 0));
+        Gizmos.DrawLine(new Vector3(rightX, bottomY, 0), new Vector3(rightX, bottomY + 999f, 0));
+
+        // Horizontal line for bottom Y limit
+        Gizmos.DrawLine(new Vector3(leftX, bottomY, 0), new Vector3(rightX, bottomY, 0));
     }
 }
