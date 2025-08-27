@@ -9,8 +9,8 @@ public class EnemyDog : MonoBehaviour
     public Transform player;
 
     [Header("Movement Settings")]
-    public float moveSpeed = 3f;
-    public float chaseRadius = 5f;   // red circle radius
+    public float moveSpeed = 6f;
+    public float chaseRadius = 10f;   // red circle radius
     public float attackRadius = 1.0f; // distance for attack
     public float attackCooldown = 1.0f; // time between attacks
 
@@ -67,9 +67,8 @@ public class EnemyDog : MonoBehaviour
     {
         isAttacking = true;
         nextAttackTime = Time.time + attackCooldown;
-
+        ScoreManager.Instance.DogBite();
         PlayAttackAnim();
-
         // Wait for animation length (or fixed short delay)
         yield return new WaitForSeconds(0.5f);
 

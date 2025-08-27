@@ -126,7 +126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRadius: 5
   scorePenalty: 100
-  explosionPrefabName: BOOM
+  stunDuration: 0.5
+  knockbackForce: 3
 --- !u!58 &658596266680373100
 CircleCollider2D:
   m_ObjectHideFlags: 0

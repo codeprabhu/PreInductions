@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(CircleCollider2D))]
 [RequireComponent(typeof(Animator))]
@@ -14,6 +15,8 @@ public class MobExplosion : MonoBehaviour
 
     private Animator animator;
     private bool isExploding = false;
+
+    private GameObject explosionTarget = null;
 
     private void Awake()
     {
@@ -38,39 +41,44 @@ public class MobExplosion : MonoBehaviour
     {
         // Trigger explosion animation
         animator.SetTrigger("Explode");
+         ScoreManager.Instance.Explosion();
 
         // Store the player to apply damage when animation event fires
         explosionTarget = player;
     }
 
-    // This will be called via **Animation Event** at the "damage frame"
-    private GameObject explosionTarget = null;
+    // Called via Animation Event at the "damage frame"
     public void ApplyExplosionEffects()
     {
         if (explosionTarget == null) return;
 
-        // Reduce score
-        if (ScoreManager.Instance != null)
-            ScoreManager.Instance.ModifyScore(-scorePenalty);
-
-        // Stun and knockback
+        // Stun + knockback
         Damageable dmg = explosionTarget.GetComponent<Damageable>();
-        if (dmg != null)
-        {
-            dmg.StunRoutine(stunDuration);        // public Stun() wrapper in Damageable
-            dmg.ApplyKnockback(transform.position);
-        }
+
+        dmg.StunRoutine(stunDuration);
     }
 
-    // Optional: destroy mob at the end of the animation
+    // Destroy mob at the end of animation
     public void FinishExplosion()
     {
-        Destroy(gameObject);
+        StartCoroutine(DestroyAfterDelay());
     }
 
-    private void OnDrawGizmosSelected()
+    private IEnumerator DestroyAfterDelay()
     {
-        Gizmos.color = Color.red;
+        yield return new WaitForSeconds(1.375f);
+        Destroy(transform.root.gameObject);
+    }
+
+    // 🔹 Draw detection radius around mob
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(1f, 0f, 0f, 0.25f); // transparent red fill
+        Gizmos.DrawSphere(transform.position, detectionRadius);
+
+        Gizmos.color = Color.red; // solid red outline
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }
+
+

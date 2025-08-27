@@ -33,7 +33,8 @@ public class CameraFollow2D : MonoBehaviour
         // Clamp Y only at bottom (no top limit)
         if (desiredPosition.y < minY)
             desiredPosition.y = minY;
-
+        if (desiredPosition.y > gizmoMaxY)
+            desiredPosition.y = gizmoMaxY;
         // Smooth follow
         transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
     }

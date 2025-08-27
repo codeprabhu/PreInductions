@@ -58,8 +58,6 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,7 +79,6 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -139,8 +136,6 @@ LineRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -162,7 +157,6 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -240,11 +234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe8756e36a1e344f9ba1fb8cf5d6869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDog
-  player: {fileID: 0}
-  moveSpeed: 3
-  chaseRadius: 5
-  attackRadius: 0.6
-  attackCooldown: 1
+  player: {fileID: 6414483603949879103, guid: 2dae5cc457607b5469c6ac6e27991d2f, type: 3}
+  moveSpeed: 5
+  chaseRadius: 10
+  attackRadius: 1
+  attackCooldown: 0.8
 --- !u!70 &2123775290144390560
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

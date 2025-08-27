@@ -32,10 +32,10 @@ public class ScorePanelController : MonoBehaviour
         panel.gameObject.SetActive(true);
 
         if (collectiblesText != null)
-            collectiblesText.text = $"Collectibles: {collectibles}";
+            collectiblesText.text = $"x{collectibles}";
 
         if (timeText != null)
-            timeText.text = $"Time: {timeElapsed:0.00}s";
+            timeText.text = $"{timeElapsed:0.00}s";
 
         StartCoroutine(SlideInPanel());
     }
